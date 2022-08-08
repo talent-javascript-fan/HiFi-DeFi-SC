@@ -1,0 +1,28 @@
+{
+  "name": "mycontract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "hardhat run --network mainnet scripts/deploy.js",
+    "build-test": "hardhat run --network testnet scripts/deploy-testnet.js",
+    "test": "hardhat test",
+    "verify": "hardhat verify --network"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.7",
+    "@openzeppelin/hardhat-upgrades": "^1.9.0",
+    "chai": "^4.3.4",
+    "ethers": "^5.4.1",
+    "hardhat": "^2.6.7"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "@openzeppelin/contracts-upgradeable": "^4.1.0",
+    "@openzeppelin/test-helpers": "^0.5.12"
+  }
+}
